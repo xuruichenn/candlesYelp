@@ -1,0 +1,56 @@
+<%- include("partials/header") %>
+    <!--<h1>Add New Candle</h1>
+    <form action="/candles" method="POST">
+        <label for="title">Title</label>
+        <input type="text" name="title" autofocus>
+        <label for="description">Description</label>
+        <input type="text" name="description">
+        <label for="image">Image Link</label>
+        <input type="text" name="image">
+        <button type="submit">Submit</button>
+    </form>-->
+    <div class="container">
+        <h1>Add a New Candle!</h1>
+        <form action="/candles" method="POST">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" name="title" placeholder="Title" autofocus>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" name="description">
+            </div>
+            <div class="form-group">
+                <label for="scent">Scent Family</label>
+                <select class="form-control" id="scent" name="scent">
+                    <option disabled selected>-- CHOOSE BELOW --</option>
+                    <option>Floral</option>
+                    <option>Citrus</option>
+                    <option>Woody</option>
+                    <option>Fruity</option>
+                    <option>Fresh & Clean</option>
+                    <option>Sweet & Spicy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="origin">Made In</label>
+                <input type="text" class="form-control" id="origin" name="origin" placeholder="Origin">
+            </div>
+            <div class="form-group">
+                <label for="brand">Brand</label>
+                <input type="text" class="form-control" id="brand" name="brand" placeholder="Brand">
+            </div>
+            <div class="form-group">
+                <label for="image">Link to image</label>
+                <input type="text" class="form-control" name="image_link">
+            </div>
+            
+              
+            
+            
+            <button type="submit" class="btn btn-Dark">Submit</button>
+        </form>
+    
+    </div>
+    
+<%- include("partials/footer") %>

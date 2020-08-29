@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+    <div class="container">
+        <div class="row mt-4">
+            <% candlesDB.forEach((candle) => { %>
+                <div class="card m-3">
+                    <a href="/candles/<%= candle._id %>">
+                        <img class="card-img card-img-top" src="<%= candle.image_link %>" alt="pics of candles">
+                    </a>
+                    <h3 class="card-title mt-3"><%= candle.title %></h3>
+                    <p class="card-text mb-4 mx-4"><%= candle.description %></p>
+                </div>
+            <% }) %>
+        </div>
+        
+        
+    </div>
+<%- include("partials/footer") %>
